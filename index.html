@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Just Music</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <h1><img src="Logo_2.jpeg" alt="Logo da Just Music" class="cabecalho_logo"></h1>
+            <nav class="cabecalho__navegacao">
+                <ul class="cabecalho__navegacao__lista">
+                    <a href="index.html" class="cabecalho__navegacao__link">
+                        <li>Home</li>
+                    </a>
+                    <a href="cursos.html" class="cabecalho__navegacao__link">
+                        <li>Cursos</li>
+                    </a>
+                    <a href="blog.html" class="cabecalho__navegacao__link">
+                        <li>Blog Just Music</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main class="corpo">
+            <section class="apresentacao">
+                <div class="apresentacao__escrita">
+                    <h2 class="apresentacao__titulo">Bem-Vindo a nossa escola</h2>
+                    <img src="partitura.jpg" alt="Partitura" class="apresentacao__partitura">
+                    <p class="apresentacao__texto identacao">A escola Just Music é uma escola de ótima qualidade, localização de fácil acesso, grande variedade de instrumentos e preços bons. Além de nossos professores qualificados, dedicados e de alta performance.</p>
+                    <p class="apresentacao__texto identacao">Não perca essa chance! Você ira entrar com pouco conhecimento e sairá daqui um grande músico.</p>
+                    <p class="apresentacao__texto">Bons estudos!</p>
+                </div>
+                <img src="banner.jpeg" alt="Nossos cursos" class="apresentacao__banner">
+            </section>
+            <section class="contato">
+                <h2 class="contato__titulo">Contato</h2>
+                <aderess>
+                    <p class="contato__texto">Preencha esse formulário ou nos mande Um Whatsapp e converse conosco.</p>
+                    <p class="contato__texto">Mandaremos um bom orçamento para você!</p>
+                    <p class="contato__texto">Telefones: (41) 9999-9999<br>(41) 99999-9999 (Whatsapp).</p>
+                </aderess>
+            </section>
+            <section class="formulario">
+                <label for="nomesobrenome" class="formulario__texto">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="formulario__input formulario__input-padrao" required>
+
+                <label for="email" class="formulario__texto">Email</label>
+                <input type="email" id="email" class="formulario__input formulario__input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone" class="formulario__texto">Telefone</label>
+                <input type="tel" id="telefone" class="formulario__input formulario__input-padrao" required placeholder="(XX)XXXXX-XXXX">
+
+                <label for="mensagem" class="formulario__texto">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="formulario__input"></textarea required>
+
+                <label class="checkbox formulario__texto"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar formulário" class="formulario__botao">
+            </section>  
+            <section class="endereco">
+                <h2 class="endereco__titulo">Endereço</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14412.78292812552!2d-49.275945640490754!3d-25.431718956116793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce41476b2bc55%3A0x9e583478722cb1de!2sPasseio%20P%C3%BAblico!5e0!3m2!1spt-BR!2sbr!4v1625752431524!5m2!1spt-BR!2sbr" frameborder="0" style="border:0; width: 90vw; height: 75vh;" allowfullscreen="" class="endereco__mapa"></iframe>
+            </section>
+        </main>
+        <footer class="rodape">
+            <div class="rodape__logo-copy">
+                <img src="Logo_2.jpeg" alt="Logo da Just Music" class="rodape__logo">
+                <p class="rodape__texto">© Copyright Escola Just Music - 2021</p>
+                <p class="rodape__texto">Powered by Anna Rachel | Maria Eduarda | Ester | Isabeli</p>
+            </div>
+
+            <div class="rodape__social">
+                <img src="instagram.png" alt="Link do nosso Instagram" class="rodape__social__rede">
+                <img src="youtube.png" alt="Link do nosso Youtube" class="rodape__social__rede">
+                <img src="plus.png" alt="Link do nosso Google Plus" class="rodape__social__rede">
+                <img src="snap.png" alt="Link do nosso SnapChat" class="rodape__social__rede">
+                <img src="facebook.png" alt="Link do nosso Facebook" class="rodape__social__rede">
+                <img src="twitter.png" alt="Link do nosso Twitter" class="rodape__social__rede">
+            </div>
+        </footer>
+    </body>

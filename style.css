@@ -1,0 +1,585 @@
+:root {
+    --branco: #FFF;
+    --rosa: #FE5A59;
+    --rosa-escuro: #BC4D51;
+    --roxo-claro: #57303A;
+    --roxo: #2E2633;
+    --cinza: #C4C4C4;
+    --preto: #000;
+    --sombra: rgb(222, 225, 230);
+}
+
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--roxo);
+    padding-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.cabecalho__logo{
+    width: 60vw;
+}
+
+.cabecalho__navegacao {
+    text-align: center;
+}
+
+.cabecalho__navegacao__link {
+    font-weight: bold;
+    color: var(--rosa);
+    text-decoration: none;
+}
+
+.cabecalho__navegacao__link li {
+    margin-bottom: 1rem;
+}
+
+.cabecalho__navegacao__link:hover {
+    color: rgb(188, 77, 81);
+    text-decoration: underline;
+}
+
+.corpo {
+    background: linear-gradient(var(--rosa-escuro), var(--roxo-claro));
+}
+
+.apresentacao {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apresentacao__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.apresentacao__partitura {
+    display: block;
+    margin: 2rem auto;
+    max-width: 300px;
+    width: 80vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: solid 0.19rem var(--preto);
+}
+
+.apresentacao__texto {
+    line-height: normal;
+    margin: 0 auto 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.identacao {
+    text-indent: 3rem;
+}
+
+.apresentacao__banner {
+    width: 100%;
+}
+
+.contato {
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--branco);
+    margin-bottom: 1rem;
+}
+
+.contato__texto {
+    text-align: center;
+    color: var(--branco);
+    line-height: normal;
+    margin: 0 auto 1rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.formulario__texto {
+    color: var(--branco);
+    line-height: normal;
+}
+
+.formulario__input {
+    max-width: 886px;
+    width: 100%;
+    background: #C4C4C4;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.formulario__input-padrao {
+    height: 2rem;
+}
+
+.formulario__botao {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    background: var(--rosa);
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    font-weight: bold;
+    height: 2rem;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.endereco {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    flex-direction: column;
+}
+
+.endereco__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--branco);
+    margin-bottom: 1rem;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--roxo);
+    padding-bottom: 0.5rem;
+    font-size: 1.4rem;
+    padding-bottom: 1.5rem;
+}
+
+.rodape__logo-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__texto {
+    font-size: 0.8rem;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 0.8rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.rodape__social__rede {
+    width: 1.8rem;
+}
+
+/*cursos*/
+
+.produtos {
+    margin-top: 2rem;
+}
+
+.produtos__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.produtos__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produtos__lista__item {
+    border: solid 0.19rem var(--preto);
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+}
+
+.produtos__lista__item__imagem {
+    height: 100px;
+}
+
+.produtos__lista__item__nome {
+    margin-top: 0.3rem;
+    margin-bottom: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.produtos__lista__item:hover {
+    border-color: var(--rosa);
+    transition-duration: 0.3s;
+}
+
+.produtos__lista__item:active {
+    box-shadow: 10px 10px 10px 0 var(--cinza);
+    transition-duration: 0.3s;
+}
+
+.produtos__lista__item:hover .produtos__lista__item__nome {
+    font-size: 1.5rem;
+}
+
+.horarios {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.horarios__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.horarios__tabela {
+    margin: 1rem .5rem;
+}
+
+.horarios__tabela__cabecalho {
+    background: rgb(254, 90, 89);
+    column-rule-color: white;
+    font-weight: bold;
+}
+
+.horarios__tabela__corpo {
+    background: #FEFEFE;
+}
+
+.horarios__tabela__cedula {
+    border: 1px solid rgb(254, 90, 89);
+    padding: .18rem .18rem;
+}
+
+.horarios__tabela__cabecalho__aulas {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*blog*/
+
+#searchbox {
+    width: 270px;
+    margin-bottom: .5rem;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+#searchbox input {
+    outline: none;
+}
+
+#searchbox input[type="text"] {
+    background: url(lupinha.png) no-repeat 10px 6px #fff;
+    border: none;
+    border-radius: 5px;
+    color: var(--cinza);
+    width: 55%;
+    padding: 8px 15px 8px 30px;
+}
+
+#button-submit {
+    background: #6A6F75; /*--define a cor do botão Buscar--*/
+    border-width: 0px;
+    padding: 9px 0px;
+    width: 23%;
+    cursor: pointer;
+    color: #fff; /*--define a cor da fonte do botão Buscar--*/
+    text-shadow: 0 1px 0 #555;
+    border: none;
+    border-radius: 5px;
+}
+
+#button-submit:hover {
+    background: var(--rosa);
+}
+
+#button-submit:active {
+    background: var(--rosa-escuro);
+    outline: none;
+}
+
+#button-submit::-moz-focus-inner {
+    border: 0;
+}
+
+.postagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postagem__video iframe {
+    width: 100vw;
+    height: 20rem;
+    margin: 1.5rem auto;
+    margin-top: 2rem;
+}
+
+.postagem__poema__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.postagem__poema__texto {
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.postagem__poema__assinatura {
+    font-size: 1.2  rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.postagem__post {
+    margin: 2rem 1.5rem;
+    max-width: 930px;
+}
+
+.postagem__post__texto {
+    line-height: normal;
+    text-align: justify;
+}
+
+.mais {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.mais__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mais__temas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mais__temas__item {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--sombra);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mais__temas__item__imagem {
+    height: 100px;
+}
+
+.mais__temas__item__titulo {
+    margin-top: 0.4rem;
+    margin-bottom: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.mais__temas__item:hover {
+    box-shadow: 10px 10px 10px 0 var(--cinza);
+    transition-duration: 0.3s;
+}
+
+.mais__temas__item:hover .mais__temas__item__titulo {
+    font-size: 1.5rem;
+}
+
+.mais__temas__item__texto {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 629px) {
+    .horarios__tabela__cedula {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .postagem__video {
+        display: flex;
+        align-items: center;
+    }
+
+    .postagem__video iframe {
+        width: 600px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 671px) {
+    .horarios__tabela {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .endereco__mapa {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 0;
+    }
+
+    .cabecalho__navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .cabecalho__navegacao__link {
+        margin-right: 1rem;
+    }
+
+    .cabecalho__navegacao__link:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .cabecalho__navegacao__link li {
+        margin-bottom: 0;
+    }
+
+    .apresentacao__partitura {
+        width: 250px;
+        float: left;
+        margin: 0 0;
+        margin-right: 3rem;
+    }
+
+    .apresentacao__escrita {
+        margin: 0 8rem;
+    }
+
+    .apresentacao__titulo {
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .apresentacao__banner {
+        margin-top: 2rem;
+    }
+
+    .checkbox {
+        margin: 1.5rem 0;
+    }
+
+    .formulario__botao {
+        margin-top: 1rem;
+        width: 40%;
+        padding: 15px 0;
+        height: auto;
+    }
+
+    .endereco__mapa {
+        height: 200px;
+    }
+
+    .rodape {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+    }
+
+    .rodape__social__rede {
+        margin-left: 1rem;
+    }
+
+    .produtos__lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .produtos__lista__item {
+        width: 20%;
+        margin: 1%;
+    }
+
+    #searchbox {
+        margin: 0;
+    }
+
+    .mais__temas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mais__temas__item {
+        width: 20%;
+        margin: 1%;
+    }
+}
